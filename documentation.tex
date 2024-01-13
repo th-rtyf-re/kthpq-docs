@@ -14,14 +14,15 @@
 \end{filecontents}
 
 \title{A guide to the beamer package \texttt{kthpq}}
-\date{November 7, 2023}
+\date{\today}
 \institute[KTH]{KTH Royal Institute of Technology}
 \author[Isaac Ren]{Isaac Ren}
 
 \usepackage{amsmath,amssymb,mathtools}
 
 % Probably load as late as possible
-\usetheme[engine=lualatex, mathshape=sf, fontlocation=known]{kthpq}
+\usetheme[engine=lualatex, mathshape=sf, fontdir=auto]{kthpq}
+\setmonofont{Bitstream Vera Sans Mono}[Scale=.9]
 
 \def\kthpq{\texttt{kthpq}}
 
@@ -75,10 +76,11 @@
 \begin{frame}[fragile=singleslide]{How to use}
 \begin{itemize}
 \item To use \kthpq{}, add the command \verb|\usepackage{kthpq}| in the preamble, probably towards the end.
-\item There are two options you can add when loading the theme:
+\item The following options are available when loading the theme:
 \begin{itemize}
 \item \texttt{engine=lualatex} or \texttt{pdflatex}. The default and recommended engine for compiling with \kthpq{} is \texttt{lualatex}, which is the only way to get the recommended fonts Figtree and Georgia. The option \texttt{pdflatex} should be faster, but uses Helvetica and Bitstream Charter.
 \item \texttt{mathshape=sf}, \texttt{rm}, or \texttt{custom}. This determines the shape used for math. The default is \texttt{sf}, sans-serif. \texttt{rm} corresponds to serif and \texttt{custom} means that no new math font is loaded (in case you want to load your own font).
+\item \texttt{fontdir=\textless directory\textgreater} or \texttt{auto}. Provide the (relative or absolute) directory path to the Figtree font files. The path used on Overleaf is provided in \texttt{sample.tex}. For local setups, use the option \texttt{auto} when \texttt{fontspec} can find the font by itself.
 \end{itemize}
 \end{itemize}
 \end{frame}
