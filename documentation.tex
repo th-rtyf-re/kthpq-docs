@@ -184,9 +184,9 @@ The number $1$ is not prime!
 \begin{block}{A more complicated formula {\cite{Riemann1859}}}
 Defining the \emph{logarithmic integral} and \emph{Riemann's prime-power counting function} respectively as
 \[
-\textnormal{li}(x) := \int_0^x \frac{\textnormal{d}t}{\ln t}
+\textnormal{li}(x) \coloneqq \int_0^x \frac{\textnormal{d}t}{\ln t}
 \qquad \textnormal{\usebeamercolor[fg]{normal text} and} \qquad
-\Pi_0(x) := \frac{1}{2} \left( \sum_{p, n: p^n < x} \frac{1}{n} + \sum_{p, n: p^n \leq x} \frac{1}{n} \right) \textnormal{\usebeamercolor[fg]{normal text},}
+\Pi_0(x) \coloneqq \frac{1}{2} \left( \sum_{p, n: p^n < x} \frac{1}{n} + \sum_{p, n: p^n \leq x} \frac{1}{n} \right) \textnormal{\usebeamercolor[fg]{normal text},}
 \]
 where $p$ spans prime numbers, we have the equation
 \[
@@ -200,8 +200,10 @@ where $\rho$ spans the nontrivial zeros of the Riemann zeta function and $x > 1$
 \begin{frame}
 \insertlines
 \frametitle{References}
+\begin{minipage}{.65\pagewidth}
 \bibliographystyle{amsalpha}
 \bibliography{example.bib}
+\end{minipage}
 \end{frame}
 
 \insertendpage
