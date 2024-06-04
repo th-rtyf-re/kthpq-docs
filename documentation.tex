@@ -23,6 +23,7 @@
 % Probably load as late as possible
 \usetheme[engine=lualatex, mathshape=sf, fontdir=auto]{kthpq}
 \setmonofont{Bitstream Vera Sans Mono}[Scale=.9]
+\renewcommand*{\emph}[1]{{\color{digital blue} \bfseries #1}}
 
 \def\kthpq{\texttt{kthpq}}
 
@@ -142,7 +143,6 @@ The following features are not included:
 \begin{frame}[fragile=singleslide]{Smaller changes}
 The following small features are also included and can be customized:
 \begin{itemize}
-\item The \verb|\emph| command has been changed to \emph{bold} instead of \textit{\usebeamercolor[fg]{emph} italic}. A new beamer color \verb|emph| has also been added, which is used by the command.
 \item All of KTH's recommended colors have been introduced and can be used to customize the color theme. See \texttt{kthpq-files/beamercolorthemekthpq.sty} for details.
 \end{itemize}
 \end{frame}
