@@ -25,6 +25,8 @@
 \setmonofont{Bitstream Vera Sans Mono}[Scale=.9]
 \renewcommand*{\emph}[1]{{\color{digital blue} \bfseries #1}}
 
+\setbeamertemplate{headline}[KTH-full]
+
 \def\kthpq{\texttt{kthpq}}
 
 \begin{document}
@@ -128,6 +130,12 @@ The following features are not included:
 \title{A left-aligned title}
 
 \inserttitlepage[left]
+
+\begin{frame}{Headline templates}
+\begin{itemize}
+\item There are three versions of the headline: \emph{\texttt{KTH-section-only}}, \emph{\texttt{KTH-frametitle-only}}, and \emph{\texttt{KTH-full}}. This determines if the section title appears, the frame title appears, or both.
+\end{itemize}
+\end{frame}
 
 \begin{frame}{Lines}
 \insertlines
