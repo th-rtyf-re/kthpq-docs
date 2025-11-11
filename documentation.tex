@@ -1,4 +1,4 @@
-% Copyright (c) 2023-2024 Isaac Ren. Licensed under the MIT license (see LICENSE.txt).
+% Copyright (c) 2023-2025 Isaac Ren. Licensed under the MIT license (see LICENSE.txt).
 
 \documentclass[17pt, t, lualatex]{beamer}
 
@@ -21,7 +21,7 @@
 \usepackage{amsmath,amssymb,mathtools}
 
 % Probably load as late as possible
-\usetheme[engine=lualatex, mathshape=sf, fontdir=auto]{kthpq}
+\usetheme[engine=lualatex, mathshape=rm, fontdir=auto]{kthpq}
 \setmonofont{Bitstream Vera Sans Mono}[Scale=.9]
 \renewcommand*{\emph}[1]{{\color{digital blue} \bfseries #1}}
 
@@ -82,7 +82,7 @@
 \item The following options are available when loading the theme:
 \begin{itemize}
 \item \texttt{engine=lualatex} or \texttt{pdflatex}. The default and recommended engine for compiling with \kthpq{} is \texttt{lualatex}, which is the only way to get the recommended fonts Figtree and Georgia. The option \texttt{pdflatex} should be faster, but uses Helvetica and Bitstream Charter.
-\item \texttt{mathshape=sf}, \texttt{rm}, or \texttt{custom}. This determines the shape used for math. The default is \texttt{sf}, sans-serif. \texttt{rm} corresponds to serif and \texttt{custom} means that no new math font is loaded (in case you want to load your own font).
+\item \texttt{mathshape=rm}, \texttt{sf}, or \texttt{custom}. This determines the shape used for math. The default is \texttt{rm}, serif. \texttt{sf} corresponds to sans-serif and \texttt{custom} means that no new math font is loaded (in case you want to load your own font).
 \item \texttt{fontdir=\textless directory\textgreater} or \texttt{auto}. Provide the (relative or absolute) directory path to the Figtree font files. The path used on Overleaf is provided in \texttt{sample.tex}. For local setups, use the option \texttt{auto} when \texttt{fontspec} can find the font by itself.
 \end{itemize}
 \end{itemize}
